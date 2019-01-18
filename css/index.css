@@ -309,3 +309,30 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.contact {
+  margin-top: 127px;
+}
+.contact .intro {
+  padding: 20px;
+}
+.contact .intro h2 {
+  padding: 20px;
+}
+.contact .intro img {
+  max-height: 200px;
+  padding: 20px;
+}
+.contact form {
+  width: 100%;
+  padding: 20px;
+}
+.contact form label,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 20px;
+  margin: 20px auto;
+}
+.contact form label {
+  font-size: 2rem;
+}
