@@ -1,1 +1,22 @@
 // Navigation code here
+
+header {
+  width: 100%;
+  padding: 20px 5px 0;
+  .flexible(column, flex-start, center);
+  h1 {
+    font-size: 4.4rem;
+    margin-bottom: 25px;
+  }
+  nav {
+    .flexible(row, center, center);
+    a {
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: @main-font-color;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

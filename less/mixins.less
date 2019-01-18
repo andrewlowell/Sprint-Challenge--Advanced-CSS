@@ -1,1 +1,24 @@
 // Mixins Here
+
+.flexible(@direction, @justify, @align) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+.button-style(@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+  &:hover {
+    color: @background;
+    background-color: @color;
+        border-color: @color;
+  }
+}
+.button-size(@padding; @size; @height; @radius) {
+  padding: @padding;
+  font-size: @size;
+  line-height: @height;
+  border-radius: @radius;
+}
