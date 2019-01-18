@@ -161,8 +161,13 @@ p {
   margin: 0 auto;
 }
 header {
+  top: 0;
+  background: #5E6164;
+  color: white;
   width: 100%;
-  padding: 20px 5px 0;
+  position: fixed;
+  opacity: 0.95;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -171,6 +176,7 @@ header {
 header h1 {
   font-size: 4.4rem;
   margin-bottom: 25px;
+  color: white;
 }
 header nav {
   display: flex;
@@ -181,7 +187,7 @@ header nav {
 header nav a {
   font-size: 1.8rem;
   text-decoration: none;
-  color: #5E6164;
+  color: white;
 }
 header nav a:not(:last-child) {
   margin-right: 20px;
@@ -195,6 +201,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 127px;
 }
 .home .intro h2 {
   padding: 15px;
