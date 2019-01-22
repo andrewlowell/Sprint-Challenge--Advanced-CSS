@@ -1,1 +1,28 @@
 // Navigation code here
+
+header {
+  top: 0;
+  background: @main-font-color;
+  color: white;
+  width: 100%;
+  position: fixed;
+  opacity: 0.95;
+  padding: 20px 0;
+  .flexible(column, flex-start, center);
+  h1 {
+    font-size: 4.4rem;
+    margin-bottom: 25px;
+    color: white;
+  }
+  nav {
+    .flexible(row, center, center);
+    a {
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: white;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

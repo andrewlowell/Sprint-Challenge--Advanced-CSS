@@ -1,3 +1,5 @@
+# Read
+
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
@@ -34,13 +36,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+  An adaptive website chooses a few breakpoints depending on how many different devices they want to optimize for, and making a layout for each viewport size chosen to support. A fully responsive website uses percentage widths and font sizes to try to make the website look good on every size of screen and in between.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+  Mobile-first means making a small view first that looks great on mobile, and then choosing adaptive breakpoints or working on responsive design thinking about how the content should look when the viewport gets bigger. We generally use min-width queries. Desktop is the opposite.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+  Rem units are proportional to the font size of the HTML tag, and since for most browsers that size is 16px, 62.5% gives a default size of 10px, meaning that rems are very easy to reason about because of multiples of 10. 1rem is 10px, 2rem is 20px, 3.6rem is 36px, etcetera.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+  Sometimes you'll get into situations where you have to write a bunch of duplicate vanilla CSS to get the behavior you need. Preprocessing gives you a few tools, such as variables and mixins, that allow you extra composability in describing how your CSS should function. A program can then automatically expand your abstractions which are easier to reason about into correct vanilla CSS.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+  I love variables for being able to make a few choices about colors and other defaults early, and I like mixins because they reduce duplicate CSS that I need to write. The concept that gave me the most trouble is recognizing the level of complexity most appropriate to particular mixins.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
